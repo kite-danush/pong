@@ -1,17 +1,17 @@
 import pygame
 
 ### Colors
-WHITE = (255, 255, 255)
-BLACK = (0,0,0)
+WHITE = (255, 255, 111)
+BLUE = (69,105,57)
 
 ### Constants
-W = 600
-H = 600
+W = 500
+H = 500
 pygame.font.init()
 comic = pygame.font.SysFont('Comic Sans MS', 30)
 
 ### Variables
-wt = 10
+wt = 5
 mplay = False
 
 p1x = W/30
@@ -116,7 +116,7 @@ def drawscore():
 ### Initialize
 screen = pygame.display.set_mode((W, H))
 pygame.display.set_caption('Snake ML v.1.0.0')
-screen.fill(BLACK)
+screen.fill(BLUE)
 pygame.display.flip()
 
 running = True
@@ -169,7 +169,7 @@ while running:
                     u_p = True
                     udr = False
 
-    screen.fill(BLACK)
+    screen.fill(BLUE)
     uploc()
     upblnv()
     drawscore()
